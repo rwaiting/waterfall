@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo</title>
+    <style type="text/css">
+        body {
+            background-color: #fff
+        }
+
+        .waterfallContainer {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .waterfallItem {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 180px;
+            height: 120px;
+            border-radius: 3px;
+            background-color: #eee;
+            border: 1px solid #bbb;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+        }
+    </style>
+    <!--[if IE]>
+    <script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="waterfallContainer">
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 245px;"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 290px;"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 140px;"></div>
+    <div class="waterfallItem" style="height: 200px"></div>
+    <div class="waterfallItem" style="height: 150px"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 220px"></div>
+    <div class="waterfallItem" style="height: 205px"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 150px"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem" style="height: 220px"></div>
+    <div class="waterfallItem" style="height: 205px"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+    <div class="waterfallItem"></div>
+</div>
+
+<script src="js/waterfall.js"></script>
+<script>
+    var flow = new waterfall();
+</script>
+</body>
+</html>
