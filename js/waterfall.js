@@ -21,12 +21,14 @@
     waterfall.prototype = {
         _init: function () {
             var _this = this;
-            document.onreadystatechange = function () {
-                if (document.readyState == "complete") {
-                    _this._flow();
-                    _this._listen();
-                }
-            }
+            _this._flow();
+            _this._listen();
+            // document.onreadystatechange = function () {
+            //     if (document.readyState == "complete") {
+            //         _this._flow();
+            //         _this._listen();
+            //     }
+            // }
         },
         _flow: function () {
             var _this = this;
